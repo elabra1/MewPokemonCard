@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+<style>
+
+    html {
+    height: 100%;
+    width: 100%;
+    }
+
+    body {
+    font-family: Arial, sans-serif;
+    background-color:#FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    }
+
+    .MewCard{
+    background-color: #DC9BC5;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.747);
+
+    border: 24px solid #8CD6DB;
+    border-radius: 20px;
+
+    padding: 20px;
+    height: 850px;
+    width: 550px;
+    position: relative;
+    }
+
+    .Header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .Name {
+    font-size: 40px;
+    font-weight: bold;
+    color: #6b449c;
+    }
+    .hpContainer {
+    display: flex;
+    align-items: baseline; /*Aligns HP and 60 vertically*/
+    }
+    .hp{
+        font-size: 15px;
+        font-weight: bold;
+        color: #6b449c;
+    }
+    .HP{
+        font-size: 40px;
+        font-weight: bold;
+        color: #6b449c;
+        margin-left: 3px; /*adds spacing between HP and 60 */
+    }
+    .image-section img{
+        height: 400px;
+        margin-bottom: 10px;
+        text-align: center;
+        border: 7px solid #C7C5D9;
+    }
+    .image-section {
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Center horizontally */
+    margin-bottom: 10px; /* Space below the image */
+    }
+    .MewDetails{
+        height: 230px;
+        padding: 10px;
+        background-color: #CDB2D9;
+        border-radius: 10px;
+        box-shadow: inset 0 2px 5px rgba(214, 118, 208, 0.993);
+    }
+    .Ability h3{
+        font-size: 25px;
+        color: #6b449c;
+        margin-top: 7px;
+    }
+    .Ability p, .Attack p {
+    font-size: 20px;
+    color: #444;
+    }
+    .Description{
+        font-size: 16px;
+        color: #444;
+    }
+    .Footer{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 45px;
+        font-size: 8px;
+        color: #666;
+    }
+
+</style>
+</head>
+
+<body>
+
+  <div class="MewCard">
+    <div class= "Header">
+        <h1 class="Name">Mew</h1>
+        <div class="hpContainer">
+            <h1 class="hp">HP</h1>
+            <h1 class="HP">60</h1>
+        </div>
+    </div>
+    <div class="image-section">
+        <img src="MEW.jpg" >
+    </div>
+    <div class = "MewDetails">
+        <div class = "Ability">
+            <h3>Ability</h3>
+            <p><strong><span style = "color: red"> Bench Barrier:</span></strong> <span class = "Description">Prevent all damage done to your Benched Pokémon by your opponent's attacks.</span></p>
+        </div>
+        <div class = "Attack">
+            <p><strong><span style = "color: purple"> Psypower:</span></strong> <span class="Description">Put 3 damage counters on your opponent's Pokémon in any way you like.</span></p>
+        </div>
+    </div>
+    <div class = "Footer">
+        <h1 class = "Weakness">Weakness: Psychic x2</h1>
+        <h1 class = "Resistance">Resistance: -</h1>
+        <h1 class = "Retreat">Retreat: 1</h1>
+    </div>
+  </div>
+</body>
+</html>
